@@ -1,0 +1,412 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.main{
+    display:flex;
+    justify-content: space-between;
+    margin:50px;
+}
+.heading{
+    background-color:transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    text-align: center;
+    width: 500px;
+    height:40px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.main button{
+    background-color: aliceblue;
+    height:40px;
+    width:70px;
+    border-radius: 20px;
+}
+.input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    gap:10px;
+}
+.input input{
+    width:400px;
+    height:40px;
+    border-radius: 30px;
+    font-style: italic;
+    margin:10px;
+    padding-left:30px;
+}
+::placeholder{
+    color: black;
+}
+.input button{
+    width:70px;
+    height:40px;
+    border-radius: 30px;
+}
+body {
+  background-image: url('./assets/fake profile detection.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.down{
+    color: aliceblue;
+    margin:50px 650px;
+}
+.Registerbutton{
+  
+ 
+  border: 2px solid cyan;
+  background:grey;
+  color: rgb(9, 11, 11);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Registerbutton:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0px 0px 15px cyan;
+}
+.input button{
+  border: 2px solid cyan;
+  background:rgb(233, 230, 230);
+  color: rgb(9, 11, 11);
+  border-radius:30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.input button:hover{
+  background: cyan;
+  color: black;
+  box-shadow: 0px 0px 15px cyan;
+}
+.ai-badge {
+  position: absolute;
+  top:46%;
+  left:50%;
+  transform: translate(-50%, -140%);
+
+  padding: 8px 24px;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: white;
+
+  background: rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+
+  backdrop-filter: blur(6px);
+
+  animation: aiPulse 2s infinite alternate;
+  margin-bottom:30px;
+}
+
+
+/* soft glowing animation */
+
+@keyframes aiPulse {
+  from {
+    box-shadow:
+      0 0 5px rgba(0,255,255,0.3),
+      0 0 10px rgba(0,255,255,0.2);
+  }
+
+  to {
+    box-shadow:
+      0 0 12px rgba(0,255,255,0.6),
+      0 0 22px rgba(0,255,255,0.4);
+  }
+}
+.down{
+  display:flex;
+  margin-left:1350px;
+}
+.background-animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-animation span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: move 20s linear infinite;
+}
+
+/* Different positions */
+
+.background-animation span:nth-child(1){
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.background-animation span:nth-child(2){
+  left: 30%;
+  animation-delay: 5s;
+}
+
+.background-animation span:nth-child(3){
+  left: 50%;
+  animation-delay: 2s;
+}
+
+.background-animation span:nth-child(4){
+  left: 70%;
+  animation-delay: 7s;
+}
+
+.background-animation span:nth-child(5){
+  left: 90%;
+  animation-delay: 4s;
+}
+
+/* Animation */
+
+@keyframes move {
+  0% {
+    top: 100%;
+    transform: scale(0);
+  }
+
+  100% {
+    top: -10%;
+    transform: scale(1);
+  }
+}
+/* Full screen background wrapper */
+
+.register-wrapper{
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    background-image: url("./shield.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* Register form container */
+
+.register-box{
+
+    width: 420px;
+
+    padding: 40px;
+
+    background: rgba(0,0,0,0.65);
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 25px cyan;
+
+    text-align: center;
+
+    backdrop-filter: blur(6px);
+
+}
+
+
+/* Heading */
+
+.register-box h1{
+
+    color: white;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 2px;
+
+    font-size: 32px;
+
+}
+
+
+/* Inputs */
+
+.register-box input{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    outline: none;
+
+}
+
+
+/* Submit button */
+
+.register-box button{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 25px;
+
+    border: 2px solid cyan;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: cyan;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+}
+
+
+/* Hover glow effect */
+
+.register-box button:hover{
+
+    background: cyan;
+
+    color: black;
+
+    box-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan;
+
+}
+.page-slide{
+
+    animation: slideIn 0.6s ease forwards;
+
+}
+
+
+@keyframes slideIn{
+
+    from{
+
+        transform: translateX(100px);
+
+        opacity: 0;
+
+    }
+
+    to{
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+}
+.splash-container{
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: black;
+
+    color: cyan;
+
+    animation: fadeIn 2s ease;
+
+}
+
+
+/* Main title */
+
+.title{
+
+    font-size: 50px;
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan;
+
+}
+
+
+/* Subtitle */
+
+.subtitle{
+
+    margin-top: 20px;
+
+    font-size: 22px;
+
+    color: white;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* Fade animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity: 0;
+
+        transform: scale(0.8);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
